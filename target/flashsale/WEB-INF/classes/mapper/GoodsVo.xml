@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.springboot.flashsale.mapper.GoodsVoMapper">
+	<!-- 联合查询goods表和flash_sale_goods表返回listGoodsVo -->
+	<select id="listGoodsVo" resultType="com.springboot.flashsale.vo.GoodsVo">
+		select g.*,fgoods.stock_count, fgoods.start_date, fgoods.end_date,fgoods.flash_sale_price from flash_sale_goods fgoods left join goods g on fgoods.goods_id = g.id
+	</select>
+	
+	<!-- 通过id商品 -->
+	 <select id="getGoodsVoByGoodsId" resultType="com.springboot.flashsale.vo.GoodsVo">
+		select g.*,fgoods.stock_count, fgoods.start_date, fgoods.end_date,fgoods.flash_sale_price from flash_sale_goods fgoods left join goods g on fgoods.goods_id = g.id where g.id=#{id}
+	</select>
+	
+	<update id="reduceStock">
+		update flash_sale_goods set stock_count = stock_count-1 where goods_id = #{goods_id}
+	</update>
+	
+</mapper>

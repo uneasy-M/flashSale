@@ -1,0 +1,57 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis",
+      "type": "com.springboot.flashsale.redis.RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.conn-timeout",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.database",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.max-active",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.max-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.max-wait",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.min-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.springboot.flashsale.redis.RedisProperties",
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
